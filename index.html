@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WB Engineering</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>WB Engineering</h1>
-        <p>3D Printing | CNC | CAD Services</p>
+    <header class="hero">
+        <div class="container">
+            <h1>WB Engineering</h1>
+            <p>3D Printing | CNC | CAD Services</p>
+            <a href="#contact" class="cta">Neem contact op</a>
+        </div>
     </header>
 
-    <main>
+    <main class="container">
         <section class="intro">
             <h2>Over Mij</h2>
             <p>Ik ben een freelance engineer met ervaring in 3D printen, CNC frezen en het maken van technische tekeningen. Mijn missie is om op maat gemaakte oplossingen te leveren voor technische uitdagingen.</p>
@@ -20,21 +26,32 @@
 
         <section class="diensten">
             <h2>Diensten</h2>
-            <ul>
-                <li>3D printen op aanvraag</li>
-                <li>CNC graveren van onderdelen</li>
-                <li>2D/3D CAD ontwerp en ondersteuning</li>
-            </ul>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>3D Printen</h3>
+                    <p>Precisiewerk op maat voor functionele prototypes en kleine producties.</p>
+                </div>
+                <div class="card">
+                    <h3>CNC Graveren</h3>
+                    <p>Fijne afwerkingen in hout, kunststof en metaal.</p>
+                </div>
+                <div class="card">
+                    <h3>CAD Ontwerp</h3>
+                    <p>Technische 2D/3D ontwerpen en visualisaties in SolidWorks of Fusion 360.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Contact</h2>
-            <p>Heb je een project of vraag? Neem gerust contact op via <a href="mailto:wbakker.engineering@gmail.com">info@wb-engineering.nl</a>.</p>
+            <p>Heb je een project of vraag? Neem gerust contact op via <a href="mailto:info@wb-engineering.nl">info@wb-engineering.nl</a>.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 WB Engineering</p>
+        <div class="container">
+            <p>&copy; 2025 WB Engineering</p>
+        </div>
     </footer>
 </body>
 </html>

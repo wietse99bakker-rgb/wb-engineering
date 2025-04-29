@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WB Engineering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WB Engineering</h1>
+        <p>3D Printing | CNC | CAD Services</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Over Mij</h2>
+            <p>Ik ben een freelance engineer met ervaring in 3D printen, CNC frezen en het maken van technische tekeningen. Mijn missie is om op maat gemaakte oplossingen te leveren voor technische uitdagingen.</p>
+        </section>
+
+        <section class="diensten">
+            <h2>Diensten</h2>
+            <ul>
+                <li>3D printen op aanvraag</li>
+                <li>CNC graveren van onderdelen</li>
+                <li>2D/3D CAD ontwerp en ondersteuning</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>Heb je een project of vraag? Neem gerust contact op via <a href="mailto:info@wb-engineering.nl">info@wb-engineering.nl</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 WB Engineering</p>
+    </footer>
+</body>
+</html>

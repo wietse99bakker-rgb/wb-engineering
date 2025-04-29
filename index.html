@@ -8,10 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-8r+VgG+JmwZkqC7RHt7Pp0M+KTqZhdVh+tfhOY3anDfRS8kU5Q43z5LM0lNsW4dzd3/05eoIBT9I0w9ZKHyQuA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
-        <div class="container">
+        <div class="container" data-aos="fade-down">
             <h1>WB Engineering</h1>
             <p>3D Printing | CNC | CAD Services</p>
             <a href="#contact" class="cta">Neem contact op</a>
@@ -19,39 +21,50 @@
     </header>
 
     <main class="container">
-        <section class="intro">
+        <section class="intro" data-aos="fade-up">
             <h2>Over Mij</h2>
             <p>Ik ben een freelance engineer met ervaring in 3D printen, CNC frezen en het maken van technische tekeningen. Mijn missie is om op maat gemaakte oplossingen te leveren voor technische uitdagingen.</p>
         </section>
 
-        <section class="diensten">
+        <section class="diensten" data-aos="fade-up">
             <h2>Diensten</h2>
             <div class="card-grid">
                 <div class="card">
+                    <i class="fas fa-cube fa-2x"></i>
                     <h3>3D Printen</h3>
                     <p>Precisiewerk op maat voor functionele prototypes en kleine producties.</p>
                 </div>
                 <div class="card">
+                    <i class="fas fa-industry fa-2x"></i>
                     <h3>CNC Graveren</h3>
                     <p>Fijne afwerkingen in hout, kunststof en metaal.</p>
                 </div>
                 <div class="card">
+                    <i class="fas fa-drafting-compass fa-2x"></i>
                     <h3>CAD Ontwerp</h3>
                     <p>Technische 2D/3D ontwerpen en visualisaties in SolidWorks of Fusion 360.</p>
                 </div>
             </div>
         </section>
 
-        <section class="contact" id="contact">
+        <section class="contact" id="contact" data-aos="fade-up">
             <h2>Contact</h2>
-            <p>Heb je een project of vraag? Neem gerust contact op via <a href="wbakker.engineering@gmail.com">wbakker.engineering@gmail.com</a>.</p>
+            <p>Heb je een project of vraag? Neem gerust contact op via <a href="mailto:info@wb-engineering.nl">info@wb-engineering.nl</a>.</p>
         </section>
     </main>
 
     <footer>
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <p>&copy; 2025 WB Engineering</p>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
 </body>
 </html>

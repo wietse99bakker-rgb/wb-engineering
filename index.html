@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 	<!-- font-awesome -->
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	<style>
+		html {
+		scroll-behavior: smooth;
+		}
+	</style>
     
     <!-- AOS -->
     <link rel="stylesheet" href="css/aos.css">
@@ -35,7 +40,8 @@
             <p data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="lead text-white my-4">
                 3D Printing | CNC Engraving | CAD Modeling
             </p>
-            <a href="#" data-aos="fade" data-aos-easing="linear" data-aos-duration="1000" data-aos-once="true" class="btn my-4 font-weight-bold atlas-cta cta-green">Neem contact op</a>
+            <a href="#contact" class="btn my-4 font-weight-bold atlas-cta cta-green">Neem contact op</a>
+
         </div>
     </div>
     <!-- three-blcok -->
@@ -67,7 +73,7 @@
                     <h2 class="font-weight-bold">Onze werkwijze</h2>
                     <p class="my-4">Van idee tot realisatie: wij begeleiden je stap voor stap 
                         <br> met technische expertise en precisieproductie.</p>
-                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Meer informatie</a>
+                    <a href="meer-informatie.html" class="btn my-4 font-weight-bold atlas-cta cta-blue">Meer informatie</a>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center">
                     <img src="img/laptop met inventor.png" alt="Take a look inside" class="mx-auto d-block">
@@ -85,7 +91,7 @@
                         Kwaliteit staat voorop. Wij leveren nauwkeurig werk, 
                         <br> afgestemd op jouw wensen en specificaties.
                     </p>
-                    <a href="#" class="btn my-4 font-weight-bold atlas-cta cta-blue">Meer informatie</a>
+                    <a href="meer-informatie.html" class="btn my-4 font-weight-bold atlas-cta cta-blue">Meer informatie</a>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" class="col-md-6 align-self-center flex-md-first">
                     <img src="img/ender 3 3d printer.png" alt="Safe and reliable" class="mx-auto d-block">
@@ -150,23 +156,24 @@
                     </ul>
                 </div>
                 <div class="col-md-6">
-                    <form>
-                    	<div class="row">
-	                        <div class="form-group col-md-6">
-	                            <label for="name">Naam</label>
-	                            <input type="name" class="form-control" id="name">
-	                        </div>
-	                        <div class="form-group col-md-6">
-	                            <label for="Email">Email</label>
-	                            <input type="email" class="form-control" id="Email">
-	                        </div>
-	                    </div>
-	                    <div class="form-group">
-	                        <label for="message">Bericht</label>
-	                        <textarea class="form-control" id="message" rows="3"></textarea>
-	                    </div>
-                        <button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Verstuur</button>
-                    </form>
+                    <form action="https://formspree.io/f/mpwdrpvl" method="POST">
+						<div class="row">
+							<div class="form-group col-md-6">
+								<label for="name">Naam</label>
+								<input type="text" class="form-control" id="name" name="name" required>
+							</div>
+							<div class="form-group col-md-6">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email" name="email" required>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="message">Bericht</label>
+							<textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+						</div>
+						<button type="submit" class="btn font-weight-bold atlas-cta atlas-cta-wide cta-green my-3">Verstuur</button>
+					</form>
+
                 </div>
             </div>
         </div>

@@ -109,6 +109,9 @@ button {
 /********** contact **********/
 #contact {
     background-size: cover;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 }
 
 #contact ul li {
@@ -129,7 +132,10 @@ button {
 /********** copyright **********/
 #copyright {
     background: #192440;
-    padding: 2rem 3rem;
+    padding: 2rem 0;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 }
 
 #copyright #social-media a {
@@ -159,4 +165,8 @@ button {
     #banner h1 {
         font-size: 3.6rem;
     }
+}
+
+body {
+    overflow-x: hidden;
 }
